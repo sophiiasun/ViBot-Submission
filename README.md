@@ -1,6 +1,6 @@
 # ViBot-Submission
 
-ViBot is a bot who can help suggest song videos based off of the emotion given off by messages, scoring them on a rating from -1 to 1. Then, based off of your message's categorization it will recommend a random song!
+ViBot is a Discord Bot who can suggest songs based off of the emotion detected from a user's message, scoring it on a rating from -1 to 1. Then, based off of your message category, it will recommend a corresponding song!
 
 Commands : 
 
