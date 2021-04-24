@@ -239,8 +239,9 @@ async def mood(ctx, *, message):
     emotion = getEmotion(score)
     link = getLink(emotion)
     emoji = getEmoji(emotion)
-    storeScore(name, score)
+    avg = getStoredAvg(name)
     compare = getCompare(score, avg)
+    storeScore(name, score)
 
     mbed = discord.Embed(
         title = 'Calculating mood...',
@@ -280,7 +281,7 @@ async def repeat(ctx):
         emoji = getEmoji(emotion)
         link = getLink(emotion)
         compare = getCompare(score, avg)
-        v
+
         mbed = discord.Embed(
             title = 'Retrieving mood...',
             description = name.mention + ', check out your emotions!',
@@ -332,7 +333,7 @@ async def help(ctx):
 async def about(ctx):
     mbed = discord.Embed(
         title =  'About:',
-        description = "This bot reads in message with the `v!mood` command followed by a message. After detecting the mood of the message, the bot then sends a corresponding song that matches the mood and produces an emotion score ranging from -1 (sad) to 1 (happy). Your previous emotion scored will be stores and the average is calculated to compare with your current emotion. For information on which commands ViBot supports, visit `v!help`. Have fun! :)\n",
+        description = "This bot reads in message with the `v!mood` command followed by a message. After detecting the mood of the message, the bot then sends a corresponding song that matches the mood and produces an emotion score ranging from -1 (sad) to 1 (happy). Your previous emotion scored will be stores and the average is calculated to compare with your current emotion. For information on which commands ViBot supports, visit `v!help`. Have fun! :)",
         color = 16776960
     )
     await ctx.send(embed = mbed)
