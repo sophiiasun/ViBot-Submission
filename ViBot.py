@@ -6,8 +6,8 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk import tokenize
 nltk.download('punkt')
 nltk.download('wordnet')
-import pyodbc
 import random
+import pyodbc
 from decouple import config
 
 client = commands.Bot(command_prefix = 'v!', help_command=None)
