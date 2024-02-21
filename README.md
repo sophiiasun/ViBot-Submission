@@ -4,16 +4,16 @@ ViBot is a Discord Bot who can suggest songs based off of the emotion detected f
 
 Commands : 
 
-Prefix : Use v! to call commands on the bot 
+Prefix : Use `v!` to call commands on the bot 
 
-v!about : Learn about what the bot does!
+`v!about` : Learn about what the bot does!
 
-v!mood : detect the mood of the msg (bot replies with score of the emotion)
+`v!mood` : detect the mood of the msg (bot replies with score of the emotion)
 
-v!help : reach the help page for the bot 
+`v!help` : reach the help page for the bot 
 
 `v!repeat` : recommend a song based off of mood 
 
-v!clear : clear the logged data of recent moods (average of all previous moods)
+`v!clear` : clear the logged data of recent moods (average of all previous moods)
 
 Link to add bot : https://discord.com/api/oauth2/authorize?client_id=835299556010885130&permissions=0&scope=bot
