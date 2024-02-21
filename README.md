@@ -12,7 +12,7 @@ v!mood : detect the mood of the msg (bot replies with score of the emotion)
 
 v!help : reach the help page for the bot 
 
-v!repeat : recommend a song based off of mood 
+`v!repeat` : recommend a song based off of mood 
 
 v!clear : clear the logged data of recent moods (average of all previous moods)
 
